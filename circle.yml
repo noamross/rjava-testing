@@ -1,0 +1,13 @@
+general:
+  branches:
+    only:
+    - master
+
+machine:
+  services:
+  - docker
+
+dependencies:
+    post:
+    - docker pull cardcorp/r-java
+    - docker run -v $(pwd):/repo -w /repo cardcorp/r-java R CMD javareconf
