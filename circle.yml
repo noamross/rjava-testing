@@ -11,4 +11,4 @@ dependencies:
     post:
     - docker build -t javatest ./
     - docker run -v $(pwd):/repo -w /repo javatest R CMD javareconf
-    - docker run -v $(pwd):/repo -w /repo javatest R CMD javareconf
+    - docker run -v $(pwd):/repo -w /repo install2.r ReporteRs
