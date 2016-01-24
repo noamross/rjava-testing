@@ -10,4 +10,4 @@ machine:
 dependencies:
     post:
     - docker pull cardcorp/r-java
-    - docker run -v $(pwd):/repo -w /repo cardcorp/r-java R CMD javareconf
+    - docker run -v $(pwd):/repo -w /repo rocker/hadleyverse R CMD javareconf
