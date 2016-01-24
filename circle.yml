@@ -9,5 +9,6 @@ machine:
 
 dependencies:
     post:
-    - docker pull cardcorp/r-java
-    - docker run -v $(pwd):/repo -w /repo rocker/hadleyverse R CMD javareconf
+    - docker build -t javatest ./
+    - docker run -v $(pwd):/repo -w /repo javatest R CMD javareconf
+    - docker run -v $(pwd):/repo -w /repo javatest R CMD javareconf
