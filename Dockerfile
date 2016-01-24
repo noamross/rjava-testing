@@ -1,2 +1,2 @@
-FROM rocker/hadleyverse
+FROM noamross/outbreak-scenarios
 MAINTAINER Noam Ross ross@ecohealthalliance.org
